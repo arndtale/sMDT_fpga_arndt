@@ -32,6 +32,8 @@ use IEEE.std_logic_unsigned.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+-- testing
+
 entity UART_RX_CTRL is
     Port ( SEND : in  STD_LOGIC;
            DATA : in  STD_LOGIC_VECTOR (7 downto 0);
