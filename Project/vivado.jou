@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Feb  8 17:24:52 2025
+# Process ID: 21988
+# Current directory: C:/Users/colin/OneDrive/Documents/GitHub/sMDT_fpga_arndt/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4292 C:\Users\colin\OneDrive\Documents\GitHub\sMDT_fpga_arndt\Project\sMDT.xpr
+# Log file: C:/Users/colin/OneDrive/Documents/GitHub/sMDT_fpga_arndt/Project/vivado.log
+# Journal file: C:/Users/colin/OneDrive/Documents/GitHub/sMDT_fpga_arndt/Project\vivado.jou
+# Running On        :ColinsPC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 9 7900X3D 12-Core Processor          
+# CPU Frequency     :4392 MHz
+# CPU Physical cores:12
+# CPU Logical cores :24
+# Host memory       :33408 MB
+# Swap memory       :2550 MB
+# Total Virtual     :35959 MB
+# Available Virtual :18848 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/FPGA Project/Ethernet_Implementation_Success.xpr}
+update_compile_order -fileset sources_1
