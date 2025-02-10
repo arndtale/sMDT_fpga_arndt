@@ -126,4 +126,4 @@ begin
         ETH_TXD => eth_txd
     );
 
-end Behavioral;
+end Behavioral; 

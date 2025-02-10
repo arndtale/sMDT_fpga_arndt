@@ -65,4 +65,4 @@ begin
     DATA_READY <= dataValid;
     DATA_OUT <= rxPacket;
 
-end Behavioral;
+end Behavioral; 
