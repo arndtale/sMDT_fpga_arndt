@@ -31,7 +31,7 @@ The constraint file we want to use, Arty-A7-100-master.xdc, corresponds to the D
 ## Running
 
 Connect the FPGA board as shown below. JA port is connected with the scintillators. We write code to connect that to the serial output, in the form of the various digital circuits (vhd files) that we've written. The top scintillator corresponds to JA[0]and the bottom to JA[1]. From the same PMT, there is a positive (red) and ground (black) wire. Attached are smaller wires that attach to the JA component of the board. The color connections for JA[0] are black(-) and orange(+) and JA[1] are red(-) and green(+). 
-WARNING: Input voltage should be 3.3V
+WARNING: Input voltage should be 5V
 
 To run your complete code with the FPGA, first run synthesis, then implementation, then generate bitstream. Open the hardware manager, select "open target" and then "program device" and your code will then run.
 
