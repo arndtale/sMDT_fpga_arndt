@@ -506,3 +506,743 @@ INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
 report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 2400.602 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2400.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sMDT/Documents/GitHub/sMDT_fpga_arndt/Project/Ethernet/Ethernet.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2400.602 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2400.602 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 9.00s |  WALL: 5.37s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2400.602 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.180 | TNS=-5810.824 |
+Phase 1 Physical Synthesis Initialization | Checksum: 17230c41b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2400.602 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.180 | TNS=-5810.824 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 17230c41b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2400.602 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.180 | TNS=-5810.824 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[25].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[25]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.180 | TNS=-5810.591 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[26].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[26]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.159 | TNS=-5810.369 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_be_reg_n_0_[3].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_be_reg[3]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_be_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.159 | TNS=-5810.393 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[28].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[28]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.159 | TNS=-5810.162 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[30].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[30]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.159 | TNS=-5809.826 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[31].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[31]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-5809.474 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Valid_Data_Bits[0].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[0]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Valid_Data_Bits[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-5809.641 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Dirty.  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[9]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Dirty. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5809.581 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[17].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[17]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5808.791 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[18].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[18]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5808.490 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[20].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[20]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5808.230 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[5].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[5]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5807.552 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[8].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[8]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-5807.607 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[11].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[20]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.129 | TNS=-5807.792 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_wait_on_ready_N_carry_or/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/WriteThrough_Exists.write_through_gate/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Perf_1.mem_write_req_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.126 | TNS=-5799.938 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/p_1_in112_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg.  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_2.saved_new_data_be[0]_i_2
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.126 | TNS=-5797.500 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/ENB_I. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_and/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.303 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[11].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[11]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.114 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[12].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[12]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.224 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[16].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[16]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.105 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[19].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[19]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5752.979 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[1].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[1]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.151 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[4].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[4]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-5753.745 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[9].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[9]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.066 | TNS=-5754.132 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/WriteThrough_Exists.write_through_gate/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_10. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.046 | TNS=-5695.100 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Valid_Data_Bits[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Perf_1.mem_write_req_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 33 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.036 | TNS=-5691.547 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg.  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_2.saved_new_data_be[0]_i_2
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.027 | TNS=-5689.999 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_5__8_n_0.  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_5__8
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_5__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.023 | TNS=-5673.598 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/mem_cache_hit_block/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/mem_cache_hit_block/MUXCY_I/mem_cache_hit. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I2/Valid_check_with_8word_cacheline.valid_check_cacheline[2].valid_check_carry_and_I/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/tag_hit_comparator2/Comp_Carry_Chain[3].MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[3].carry_sel_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.018 | TNS=-5671.327 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[4].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.004 | TNS=-5649.819 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[3].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.994 | TNS=-5552.228 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/DATA_RAM_Module/Not_Using_XPM.Using_B36_S4.The_BRAMs[0].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/p_107_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Victim_Cache.victim_valid_old_data_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.993 | TNS=-5537.537 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[2].carry_sel_reg_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.951 | TNS=-5523.428 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/update_idle_1_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_5__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.942 | TNS=-5520.679 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1/D_AS. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_LWX_SWX_instr.ex_reservation_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_Stack_Protection.Check_Stack_Address_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[1]_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/wb_exception_kind_i[30]_i_64_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/ENA_I. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Using_Stack_Protection.stack_protection_I/shr_reg_reg[0]_0[2].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Using_Stack_Protection.stack_protection_I/shr_reg_reg[29]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Using_Stack_Protection.stack_protection_I/shr_reg_reg[0]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.937 | TNS=-5520.031 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.931 | TNS=-5515.770 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/DATA_RAM_Module/Not_Using_XPM.Using_B36_S4.The_BRAMs[3].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[19].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_1__118
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.923 | TNS=-5515.575 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[29]_0.  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[29]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[29]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.922 | TNS=-5515.497 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/wb_exception_kind_i[30]_i_65_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[30]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.922 | TNS=-5515.497 |
+Phase 3 Critical Path Optimization | Checksum: 15b6a81df
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2400.602 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.922 | TNS=-5515.497 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1/D_AS. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_LWX_SWX_instr.ex_reservation_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_LWX_SWX_instr.ex_reservation_reg. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_FPGA.Native_i_2__142_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_FPGA.Native_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.920 | TNS=-5514.308 |
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ENBWREN_cooolgate_en_sig_7. Critical path length was reduced through logic transformation on cell system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ENBWREN_cooolgate_en_gate_13_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/ENB_I. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.916 | TNS=-5514.187 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_wait_on_ready_N_carry_or/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/WriteThrough_Exists.write_through_gate/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/tag_hit_comparator/Comp_Carry_Chain[3].MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/word_write_valid_data_carry/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[2].valid_check_carry_and_I/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.911 | TNS=-5508.388 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[1].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.905 | TNS=-5486.411 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_dbg_pc_hit_i_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_3. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Performance_Debug_Control.ex_dbg_pc_hit_i_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/ex_dbg_pc_hit_i025_out. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.898 | TNS=-5486.239 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_dbg_pc_hit_single_step_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/single_Step_N_reg. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Performance_Debug_Control.ex_dbg_pc_hit_single_step_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/PreFetch_Buffer_I1/Instruction_Prefetch_Mux[4].Gen_Instr_DFF/ex_dbg_pc_hit_i025_out. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.898 | TNS=-5485.960 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ENBWREN_cooolgate_en_sig_6. Critical path length was reduced through logic transformation on cell system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_ENBWREN_cooolgate_en_gate_11_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/ENB_I. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.892 | TNS=-5485.509 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_10. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.881 | TNS=-5428.013 |
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_2[0]. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_Perf_2.saved_new_data_be[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_Perf_1.mem_write_req_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.840 | TNS=-5426.239 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_10. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_2[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_2[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.839 | TNS=-5421.873 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Data_RAM_Module/Not_Using_XPM.Using_B36_S9.The_BRAMs[2].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_and/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.debug_combinded_carry_or_I/MUXCY_I/lopt_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[0].valid_check_carry_and_I/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_FPGA_FSL_1.tag_hit_comparator/Comp_Carry_Chain[3].MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_FPGA_FSL_1.tag_hit_comparator/Using_Extra_Carry.MUXCY_EXTRA_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.836 | TNS=-5420.450 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[3].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.832 | TNS=-5419.402 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[1].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.823 | TNS=-5411.745 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/DATA_RAM_Module/Not_Using_XPM.Using_B36_S4.The_BRAMs[3].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[17].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_3__59
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.823 | TNS=-5411.687 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Data_RAM_Module/Not_Using_XPM.Using_B36_S9.The_BRAMs[3].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/D[4].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_i_4__35
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/D[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.814 | TNS=-5411.051 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[4].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[4]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.812 | TNS=-5410.256 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[0]_0[8].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[21]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[0]_0[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.810 | TNS=-5413.237 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[2].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.796 | TNS=-5407.602 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/A. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.787 | TNS=-5405.331 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.777 | TNS=-5390.038 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[9].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[9]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.758 | TNS=-5389.140 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/DATA_RAM_Module/Not_Using_XPM.Using_B36_S4.The_BRAMs[0].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[0].New_Data_Write_LUT/D[0]. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[0].New_Data_Write_LUT/Using_FPGA.Native_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/p_107_in. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.745 | TNS=-5388.582 |
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_LWX_SWX_instr.ex_reservation_reg. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_FPGA.Native_i_2__142_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA_2.ex_load_store_instr_Inst/Using_FPGA.Native_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.743 | TNS=-5387.459 |
+INFO: [Physopt 32-710] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[1].New_Data_Write_LUT/WEB[0]. Critical path length was reduced through logic transformation on cell system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[1].New_Data_Write_LUT/Using_FPGA.Native_comp.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/p_107_in. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.742 | TNS=-5387.569 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[1].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.727 | TNS=-5376.499 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/DATA_RAM_Module/Not_Using_XPM.Using_B36_S4.The_BRAMs[6].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[5].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_3__62
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.725 | TNS=-5375.551 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[0]_0[25].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[4]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Branch_CMP_Op1_reg[0]_0[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.715 | TNS=-5374.885 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[19].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[12]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.715 | TNS=-5374.663 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[2].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[29]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.715 | TNS=-5374.216 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[25].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[6]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.715 | TNS=-5379.834 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[23].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[8]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_4.WB_DCache_Valid_Read_data_reg[0]_0[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5379.438 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[23].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[23]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.436 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[3].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[3]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.105 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[5].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[5]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.110 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[8].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_data_reg[8]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5377.959 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[1].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[10]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.234 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[4].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[13]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.628 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[11].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[20]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.713 | TNS=-5378.480 |
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[0].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Using_Perf_2.saved_new_tag_bits_reg[8]
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Saved_Tag_Value[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.710 | TNS=-5378.477 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/cachehit_detect_I1/WriteThrough_Exists.write_through_gate/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/TAG_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_10. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Use_MuxCy[3].OF_Piperun_Stage/MUXCY_I/Using_FPGA.Native_2[0]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.709 | TNS=-5371.197 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Data_RAM_Module/Not_Using_XPM.Using_B36_S9.The_BRAMs[2].RAMB36_I1/DATA_OUTB[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_and/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_I2[3].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_i_10__4
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_I2[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.697 | TNS=-5371.125 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/saved_new_data[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[24].  Re-placed instance system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_4__25
+INFO: [Physopt 32-735] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_Victim_Cache.read_victim_valid_reg_0[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.697 | TNS=-5370.670 |
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_I2[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/DOADO[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.697 | TNS=-5370.670 |
+Phase 4 Critical Path Optimization | Checksum: 1d80da7dc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2413.648 ; gain = 13.047
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2413.648 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.697 | TNS=-5370.670 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.483  |        440.154  |            2  |              0  |                    80  |           0  |           2  |  00:00:08  |
+|  Total          |          0.483  |        440.154  |            2  |              0  |                    80  |           0  |           3  |  00:00:08  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2413.648 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: dacb5369
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2413.648 ; gain = 13.047
+INFO: [Common 17-83] Releasing license: Implementation
+435 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 2413.648 ; gain = 13.047
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2431.656 ; gain = 18.008
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sMDT/Documents/GitHub/sMDT_fpga_arndt/Project/Ethernet/Ethernet.runs/impl_1/system_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2431.656 ; gain = 18.008
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 9a3ff3d2 ConstDB: 0 ShapeSum: 283f0c9e RouteDB: 0
+Post Restoration Checksum: NetGraph: 27cd81cb | NumContArr: 42a5022a | Constraints: 190a55ad | Timing: 0
+Phase 1 Build RT Design | Checksum: 837cd9a2
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 2553.898 ; gain = 111.918
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 837cd9a2
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:45 . Memory (MB): peak = 2553.898 ; gain = 111.918
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 837cd9a2
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:45 . Memory (MB): peak = 2553.898 ; gain = 111.918
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: ceea3821
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:53 . Memory (MB): peak = 2568.969 ; gain = 126.988
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.619 | TNS=-4831.661| WHS=-1.253 | THS=-289.288|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: ccca9df0
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:58 . Memory (MB): peak = 2574.824 ; gain = 132.844
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.619 | TNS=-4694.847| WHS=N/A    | THS=N/A    |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 1a5057f16
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:58 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00374287 %
+  Global Horizontal Routing Utilization  = 0.00355215 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 18556
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 18555
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: bdbca3b7
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:58 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: bdbca3b7
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:58 . Memory (MB): peak = 2586.906 ; gain = 144.926
+Phase 3 Initial Routing | Checksum: eee95ae7
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:07 . Memory (MB): peak = 2586.906 ; gain = 144.926
+INFO: [Route 35-580] Design has 16 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++=============================+=============================+==============================================================================================================================================+
+| Launch Setup Clock          | Launch Hold Clock           | Pin                                                                                                                                          |
++=============================+=============================+==============================================================================================================================================+
+| clk_out1_system_clk_wiz_0_0 | clk_out1_system_clk_wiz_0_0 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/valid_Req_XX_reg/D                                        |
+| clk_out1_system_clk_wiz_0_0 | clk_out1_system_clk_wiz_0_0 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/of_set_MSR_EE_hold_reg/D                                                |
+| clk_out1_system_clk_wiz_0_0 | clk_out1_system_clk_wiz_0_0 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/current_read_info_reg[already_dirty]/D |
+| clk_out1_system_clk_wiz_0_0 | clk_out1_system_clk_wiz_0_0 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/wb_gpr_write_dbg_reg/D                                                  |
+| clk_out1_system_clk_wiz_0_0 | clk_out1_system_clk_wiz_0_0 | system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/data_write_block_bits_reg[2]/D         |
++-----------------------------+-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2614
+ Number of Nodes with overlaps = 477
+ Number of Nodes with overlaps = 163
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.259 | TNS=-6742.814| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1e1e31fa7
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:34 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 764
+ Number of Nodes with overlaps = 482
+ Number of Nodes with overlaps = 189
+ Number of Nodes with overlaps = 98
+ Number of Nodes with overlaps = 43
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.198 | TNS=-6644.781| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2857813e1
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:58 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 447
+ Number of Nodes with overlaps = 223
+ Number of Nodes with overlaps = 87
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.284 | TNS=-6603.365| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 24c46a4f9
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:17 . Memory (MB): peak = 2586.906 ; gain = 144.926
+Phase 4 Rip-up And Reroute | Checksum: 24c46a4f9
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:17 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1867cb115
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:19 . Memory (MB): peak = 2586.906 ; gain = 144.926
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.191 | TNS=-6453.342| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: e893f591
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:20 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: e893f591
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:20 . Memory (MB): peak = 2586.906 ; gain = 144.926
+Phase 5 Delay and Skew Optimization | Checksum: e893f591
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:20 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1702fdaa8
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2586.906 ; gain = 144.926
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.189 | TNS=-6445.790| WHS=0.021  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: dbb8cc22
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2586.906 ; gain = 144.926
+Phase 6 Post Hold Fix | Checksum: dbb8cc22
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.37777 %
+  Global Horizontal Routing Utilization  = 5.54604 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 82.8829%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 87.3874%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y56 -> INT_L_X40Y56
+East Dir 1x1 Area, Max Cong = 95.5882%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X35Y65 -> INT_R_X35Y65
+   INT_L_X32Y63 -> INT_L_X32Y63
+   INT_R_X31Y62 -> INT_R_X31Y62
+   INT_L_X32Y62 -> INT_L_X32Y62
+   INT_L_X34Y62 -> INT_L_X34Y62
+West Dir 2x2 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X38Y58 -> INT_R_X39Y59
+   INT_L_X40Y58 -> INT_R_X41Y59
+   INT_L_X36Y56 -> INT_R_X37Y57
+   INT_L_X38Y54 -> INT_R_X39Y55
+   INT_L_X40Y52 -> INT_R_X41Y53
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.666667 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.875 Sparse Ratio: 1.5625
+
+Phase 7 Route finalize | Checksum: 14907d716
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 14907d716
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1e361ad9d
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:24 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.189 | TNS=-6445.790| WHS=0.021  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1e361ad9d
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:25 . Memory (MB): peak = 2586.906 ; gain = 144.926
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 448c61cd
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:26 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:26 . Memory (MB): peak = 2586.906 ; gain = 144.926
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+456 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:20 ; elapsed = 00:02:29 . Memory (MB): peak = 2586.906 ; gain = 155.250
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/sMDT/Documents/GitHub/sMDT_fpga_arndt/Project/Ethernet/Ethernet.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/sMDT/Documents/GitHub/sMDT_fpga_arndt/Project/Ethernet/Ethernet.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 2648.242 ; gain = 61.336
+INFO: [runtcl-4] Executing : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+466 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2677.441 ; gain = 29.199
+INFO: [runtcl-4] Executing : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2715.629 ; gain = 14.875
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sMDT/Documents/GitHub/sMDT_fpga_arndt/Project/Ethernet/Ethernet.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2715.629 ; gain = 33.883
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 1 out of 54 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: ck_rst.
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 1 out of 54 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: ck_rst.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal system_i/mig_7series_0/u_system_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clk3_out on the system_i/mig_7series_0/u_system_mig_7series_0_1_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of system_i/mig_7series_0/u_system_mig_7series_0_1_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+WARNING: [DRC RTSTAT-10] No routable loads: 45 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], system_i/ram_interconnect/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0]... and (the first 15 of 25 listed).
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 3 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 31 14:05:58 2025...
