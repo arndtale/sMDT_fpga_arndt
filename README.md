@@ -20,3 +20,7 @@ The hardware needed in this tutorial will be the Arty A7 FPGA borad and a micro-
 ### Run
 
 First step is to run synthesis in vivado, run implementation, and generate bitstream. Connect the device to the computer using the micro-USB cable. When the power light is on, go to the device manager in vivado and auto-connect the board. Finally, select Program Device on the top of the window. 
+
+### Data
+
+The data for the current programming logic can be found in the two_scintillator branch of this repository. You can find more information in that branch's ReadMe file. 
