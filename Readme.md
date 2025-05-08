@@ -16,7 +16,7 @@ Here is a brief description of all of the design files.
 
 ## Constraint file
 
-There are two constraint files for this project: b3.xdc and Arty-A7-100-Master.xdc. The b3.xdc file corresponds to the Digilent Basys 3 FPGA that we have used previously. 
+There are two constraint files for this project: b3.xdc and Arty-A7-100-Master.xdc. The b3.xdc file corresponds to the Digilent Basys 3 FPGA that we have used previously (will not be used here). 
 The constraint file we want to use, Arty-A7-100-master.xdc, corresponds to the Digilent Arty A7 FPGA. Many lines contain comments referncing pins and switches, whose labels can be found both in the comments of this file and labeled on the FPGA board. I will outline the most notable parts:
 
     1. Clock Signal
@@ -70,7 +70,11 @@ To see the counts in real time, open VS Code, find file "cosmic_ray_gui.py," and
 
 ## Count Output (UART)
 
-While the UART is communicating correctly with the computer, we want each count to come through individually, not just per second. Each count should have an event ID, along with a timestamp, which will be saved to a file (.txt or .csv). This file should be able to be manipulated to output any type of analysis (could be counts per second, minute, etc.). 
+Currently, the code in "cosmic_ray_gui.py" outputs the number of counts per second from the coincidence scintillator counter for a total of 60 seconds. The duration can be changed. I have created an updated file, called "smdt_gui.py", with a GUI that allows the user to input voltage, date and time, and a label, before reading in the data to a CSV file. I have not tested this file yet, so it may require troublshooting. The goal is to read in data from the mini-chamber along with timestamps and voltage data to collect information on muon trajectory. This is a stepping stone in this process (currently, no mini-chamber data enters the FPGA, just scintillator data - which may be obsolete or unnecessary in the future). This file can be found in the GUI folder of this branch. 
+
+## Contact
+
+If there are any questions concenrning any part of this project, please contact me at the email: alexismarndt@outlook.com
 
 
 
